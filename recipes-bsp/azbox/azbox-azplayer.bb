@@ -1,8 +1,8 @@
 DESCRIPTION = "Azbox AZplayer app plugin"
-RDEPENDS = "enigma2"
-LICENSE = "CLOSED"
-NHIBIT_PACKAGE_STRIP = "1"
-PR = "r6"
+RDEPENDS = "enigma2 curl"
+
+
+PR = "r10"
 
 SRC_URI = "file://bin \
 	   file://lib \
@@ -12,14 +12,11 @@ SRC_URI = "file://bin \
 
 do_install_azboxhd() {
 	install -d ${D}/usr/bin/
-	echo 'LD_LIBRARY_PATH=/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/ /usr/bin/rmfp_player.real "$@"' >> ${WORKDIR}/bin/rmfp_player.wrapper
-	rm ${WORKDIR}/lib/.debug -rf
-	install -m 0755 ${WORKDIR}/bin/rmfp_player-ForHD ${D}/usr/bin/rmfp_player.real
-	install -m 0755 ${WORKDIR}/bin/rmfp_player.wrapper ${D}/usr/bin/rmfp_player
-	
-	install -d ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/
-        install -m 0755 ${WORKDIR}/lib/lib* ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/
-	
+	install -m 0755 ${WORKDIR}/bin/rmfp_player-ForHD ${D}/usr/bin/rmfp_player
+
+	install -d ${D}/usr/lib/
+	install -m 0755 ${WORKDIR}/lib/lib* ${D}/usr/lib/
+
 	install -d ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/
 	install -m 0755 ${WORKDIR}/plugin/*.pyo ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/
 
@@ -29,13 +26,10 @@ do_install_azboxhd() {
 
 do_install_azboxme() {
 	install -d ${D}/usr/bin/
-	echo 'LD_LIBRARY_PATH=/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/ /usr/bin/rmfp_player.real "$@"' >> ${WORKDIR}/bin/rmfp_player.wrapper
-	install -m 0755 ${WORKDIR}/bin/rmfp_player ${D}/usr/bin/rmfp_player.real
-	install -m 0755 ${WORKDIR}/bin/rmfp_player.wrapper ${D}/usr/bin/rmfp_player
-	
+	install -m 0755 ${WORKDIR}/bin/rmfp_player ${D}/usr/bin/
 
-	install -d ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/
-	install -m 0755 ${WORKDIR}/lib/lib* ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/
+	install -d ${D}/usr/lib/
+	install -m 0755 ${WORKDIR}/lib/lib* ${D}/usr/lib/
 
 	install -d ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/
 	install -m 0755 ${WORKDIR}/plugin/*.pyo ${D}/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/
@@ -48,10 +42,10 @@ do_install_azboxminime() {
 do_install_azboxme
 }
 
-#FILES_${PN} = "/usr/bin/"
-#FILES_${PN} += "/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/"
-#FILES_${PN} += "/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/img/"
-#FILES_${PN} += "/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/lib/"
+FILES_${PN} = "/usr/bin/"
+FILES_${PN} += "/usr/lib/"
+FILES_${PN} += "/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/"
+FILES_${PN} += "/usr/lib/enigma2/python/Plugins/Extensions/AZPlay/img/"
 
 
 
