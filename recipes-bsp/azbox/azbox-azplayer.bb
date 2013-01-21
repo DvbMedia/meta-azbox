@@ -1,5 +1,6 @@
 DESCRIPTION = "Azbox AZplayer app plugin"
 RDEPENDS = "enigma2 curl"
+LICENSE = "PROPRITARY"
 
 
 PR = "r10"
