@@ -1,9 +1,9 @@
-DESCRIPTION = "Small utilities specific to ${MACHINE}"
+DESCRIPTION = "utility to show an mpeg2/4 iframe on a ${MACHINE}"
 SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "GPL"
 
-PV = "1.0"
+PV = "1.1"
 PR = "r1"
 
 PROVIDES += "virtual/showiframe"
