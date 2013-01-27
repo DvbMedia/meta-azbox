@@ -7,11 +7,11 @@ KV = "3.3.1-opensat"
 
 SRCDATE_azboxme = "20130123"
 SRCDATE_azboxminime = "20130123"
-SRCDATE_azboxhd = "20130123"
+SRCDATE_azboxhd = "20130125"
 
 
 PV = "${KV}+${SRCDATE}"
-MACHINE_KERNEL_PR_append = ".12"
+MACHINE_KERNEL_PR_append = ".13"
 
 
 SRC_URI = "http://azbox-enigma2-project.googlecode.com/files/${MACHINE}-dvb-modules-${KV}-${SRCDATE}.tar.gz"
