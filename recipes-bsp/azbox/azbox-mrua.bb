@@ -13,6 +13,8 @@ SRC_URI[azbox-mrua-azboxhd.md5sum] = "f595f793c42fe7985624bf76128a6843"
 SRC_URI[azbox-mrua-azboxhd.sha256sum] = "7b638fff5603e8599fb61543a9c1be17ce9c8ea7d9ced536352aa57a42f37b8b"
 SRC_URI[azbox-mrua-azboxme.md5sum] = "73f9840f5cfec6e0838eefdc2813dab3"
 SRC_URI[azbox-mrua-azboxme.sha256sum] = "49a531e062c41e901acdf29f80ab3db688bf89f228020b992c70823cf9d01436"
+SRC_URI[azbox-mrua-azboxminime.md5sum] = "73f9840f5cfec6e0838eefdc2813dab3"
+SRC_URI[azbox-mrua-azboxminime.sha256sum] = "49a531e062c41e901acdf29f80ab3db688bf89f228020b992c70823cf9d01436"
 
 
 S = "${WORKDIR}"
