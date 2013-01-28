@@ -15,12 +15,12 @@ SRC_URI += "http://azbox-enigma2-project.googlecode.com/files/linux-azbox-${KV}-
 
 SRC_URI_append_azboxme = "http://azbox-enigma2-project.googlecode.com/files/initramfs-${MACHINE}-08012013.tar.bz2;name=azbox-initrd-${MACHINE}"
 
-SRC_URI_append_azboxminime = "http://azbox-enigma2-project.googlecode.com/files/initramfs-${MACHINE}-08012013.tar.bz2;azbox-initrd-${MACHINE}"
+SRC_URI_append_azboxminime = "http://azbox-enigma2-project.googlecode.com/files/initramfs-${MACHINE}-08012013.tar.bz2;name=azbox-initrd-${MACHINE}"
 
-SRC_URI_append_azboxhd = "http://azbox-enigma2-project.googlecode.com/files/initramfs-${MACHINE}-08012013.tar.bz2;azbox-initrd-${MACHINE}"
+SRC_URI_append_azboxhd = "http://azbox-enigma2-project.googlecode.com/files/initramfs-${MACHINE}-08012013.tar.bz2;name=azbox-initrd-${MACHINE}"
 
-SRC_URI[azbox-initrd-azboxhd.md5sum] = "0490b6920635ef7097cc06483e657a9d"
-SRC_URI[azbox-initrd-azboxhd.sha256sum] = "1c344c644f5a93d71f4c87bc4d4543574826700c2c71cb653b7f7b4378a708a2"
+SRC_URI[azbox-initrd-azboxhd.md5sum] = "8b1e95dc4189ca66d9ad7650eaf571a6"
+SRC_URI[azbox-initrd-azboxhd.sha256sum] = "3d1302513ac1f9948e49e94802e2bcfd0dfa4f99d9984220f5b84c65eb0d72cc"
 SRC_URI[azbox-initrd-azboxme.md5sum] = "6e11118d1061b8d7e55b4bd0f31499c5"
 SRC_URI[azbox-initrd-azboxme.sha256sum] = "b706db300f0ea72060ffcb2e15093361072c430fb2089892abc6d051088e1055"
 
