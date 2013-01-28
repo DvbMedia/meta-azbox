@@ -16,8 +16,12 @@ MACHINE_KERNEL_PR_append = ".13"
 
 SRC_URI = "http://azbox-enigma2-project.googlecode.com/files/${MACHINE}-dvb-modules-${KV}-${SRCDATE}.tar.gz;name=azbox-dvb-modules-${MACHINE}"
 
+SRC_URI[azbox-dvb-modules-azboxhd.md5sum] = "eca4bf5a0e744d8550a0479d0aa91072"
+SRC_URI[azbox-dvb-modules-azboxhd.sha256sum] = "787204cf1bdbd0ae0a0113403d75605e2f916319f01dde997c57af7adde96dc5"
 SRC_URI[azbox-dvb-modules-azboxme.md5sum] = "550a2f55e0061c55696f01d3619af745"
 SRC_URI[azbox-dvb-modules-azboxme.sha256sum] = "19932210adbed6e38ef703133883c91352c31e7787b6811b298647e6d369ecf5"
+SRC_URI[azbox-dvb-modules-azboxminime.md5sum] = "9cfe07854d615b587c5f632f2c14b92a"
+SRC_URI[azbox-dvb-modules-azboxminime.sha256sum] = "5046abf091e443ece67e2b908102bfef68c479c53f72110f7db1eb47182961b3"
 
 S = "${WORKDIR}"
 
