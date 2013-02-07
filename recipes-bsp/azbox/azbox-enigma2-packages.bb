@@ -4,10 +4,10 @@ DEPENDS = "python-native"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE="CLOSED"
 
-SRCREV = "e2cee01d2a6829fe95687a9a130a712581fbb8d6"
+SRCREV = "dcdb5056b4e43feccf7d750d70e32b4e9a6dee9c"
 inherit gitpkgv
 
-PR = "r5"
+PR = "r6"
 
 
 SRC_URI = "git://azboxopenpli.git.sourceforge.net/gitroot/azboxopenpli/RtiSYS;protocol=git;tag=${SRCREV} \
