@@ -5,19 +5,23 @@ LICENSE = "CLOSED"
 
 KV = "3.3.1-opensat"
 
-SRCDATE_azboxme = "20130123"
-SRCDATE_azboxminime = "20130123"
-SRCDATE_azboxhd = "20130125"
+SRCDATE_azboxme = "20130204"
+SRCDATE_azboxminime = "20130204"
+SRCDATE_azboxhd = "20130204"
 
 
 PV = "${KV}+${SRCDATE}"
-MACHINE_KERNEL_PR_append = ".13"
+MACHINE_KERNEL_PR_append = ".14"
 
 
 SRC_URI = "http://azbox-enigma2-project.googlecode.com/files/${MACHINE}-dvb-modules-${KV}-${SRCDATE}.tar.gz;name=azbox-dvb-modules-${MACHINE}"
 
-SRC_URI[azbox-dvb-modules-azboxme.md5sum] = "550a2f55e0061c55696f01d3619af745"
-SRC_URI[azbox-dvb-modules-azboxme.sha256sum] = "19932210adbed6e38ef703133883c91352c31e7787b6811b298647e6d369ecf5"
+SRC_URI[azbox-dvb-modules-azboxhd.md5sum] = "8b9d9f7216ff9d0830e52b16cf40caf7"
+SRC_URI[azbox-dvb-modules-azboxhd.sha256sum] = "2585c090fef7fc469665ef3492e11cab8aefc483999ebf1cd4fdbcc3796400bc"
+SRC_URI[azbox-dvb-modules-azboxme.md5sum] = "1f2b389abaf6b47329fcb7f874bbf245"
+SRC_URI[azbox-dvb-modules-azboxme.sha256sum] = "d2d8c35fa3cd12e9197faccdc4a9286320383da081ff6b417d21a0ec9c590464"
+SRC_URI[azbox-dvb-modules-azboxminime.md5sum] = "efe429a258f06f4057306ad11f2c3f8d"
+SRC_URI[azbox-dvb-modules-azboxminime.sha256sum] = "bd955cc34fed5167f20abd3b63619e640dbb62bcc9cd8b1481536d1f5dc77118"
 
 S = "${WORKDIR}"
 
