@@ -5,7 +5,7 @@ MACHINE_KERNEL_PR_append = ".7"
 
 KV = "3.3.1"
 
-SRC_URI += "http://azbox-enigma2-project.googlecode.com/files/linux-azbox-${KV}-new-2.tar.bz2 \
+SRC_URI += "http://azbox-enigma2-project.googlecode.com/files/linux-azbox-${KV}-new-2.tar.bz2;name=azbox-kernel \
 	   file://${MACHINE}_defconfig \
 	   file://genzbf.c \
 	   file://sigblock.h \
@@ -19,6 +19,9 @@ SRC_URI_append_azboxminime = "http://azbox-enigma2-project.googlecode.com/files/
 
 SRC_URI_append_azboxhd = "http://azbox-enigma2-project.googlecode.com/files/initramfs-${MACHINE}-14022013.tar.bz2;name=azbox-initrd-${MACHINE}"
 
+
+SRC_URI[azbox-kernel.md5sum] = "dfd04abeaf3741b3d2a44428ca5aeaa1"
+SRC_URI[azbox-kernel.sha256sum] = "31b73397220d85aedf3c914026371fc1eeac67e3de09a5610b70b209d2a8b9df"
 SRC_URI[azbox-initrd-azboxhd.md5sum] = "4ca0977c0b89f922abaf4e384198b530"
 SRC_URI[azbox-initrd-azboxhd.sha256sum] = "91d9bae6dc79370822c90b298fcae6f8c0840da1b8b9384d81a50edecce335c1"
 SRC_URI[azbox-initrd-azboxme.md5sum] = "8843278aa530d9da8a125e86e2b56b8d"
