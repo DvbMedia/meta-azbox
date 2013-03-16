@@ -3,7 +3,7 @@ SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "GPL"
 
-PV = "1.1"
+PV = "1.2"
 PR = "r1"
 
 PROVIDES += "virtual/showiframe"
