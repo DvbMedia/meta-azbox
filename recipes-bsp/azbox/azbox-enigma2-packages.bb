@@ -7,7 +7,7 @@ LICENSE="CLOSED"
 SRCREV = "dcdb5056b4e43feccf7d750d70e32b4e9a6dee9c"
 inherit gitpkgv
 
-PR = "r6"
+PR = "r9"
 
 
 SRC_URI = "git://azboxopenpli.git.sourceforge.net/gitroot/azboxopenpli/RtiSYS;protocol=git;tag=${SRCREV} \
@@ -29,7 +29,7 @@ do_install() {
 	
 	install -d  ${D}/usr/lib/enigma2/python/Plugins/SystemPlugins/VideoSettingsSetup
 
-	install -m 0644 ${S}/VideoSettingsSetup/*.pyo \
+	install -m 0644 ${S}/VideoSettingsSetup/*.py \
 	${D}/usr/lib/enigma2/python/Plugins/SystemPlugins/VideoSettingsSetup
 
 	
