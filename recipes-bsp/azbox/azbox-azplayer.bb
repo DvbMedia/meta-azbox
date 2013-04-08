@@ -2,14 +2,20 @@ DESCRIPTION = "Azbox AZplayer app plugin"
 RDEPENDS = "enigma2 curl"
 LICENSE = "CLOSED"
 
+SRCREV = "${AUTOREV}"
+
+SRC_URI = "git://github.com/oe-alliance/e2openplugin-${MODULE}.git;protocol=git"
+
+S = "${WORKDIR}/git"
+
+
 
 PR = "r10"
+inherit gitpkgv
 
-SRC_URI = "file://bin \
-	   file://lib \
-	   file://img \
-	   file://plugin \
-	  "
+PV = "git${SRCPV}"
+PKGV = "git${GITPKGV}"
+SRC_URI = "git://github.com/OpenAZBox/AZPlay.git" 
 
 do_install_azboxhd() {
 	install -d ${D}/usr/bin/
