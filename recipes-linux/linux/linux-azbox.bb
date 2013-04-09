@@ -5,7 +5,7 @@ MACHINE_KERNEL_PR_append = ".9"
 
 DEPENDS = "genromfs-native"
 DEPENDS_azboxhd = "genromfs-native azbox-hd-buildimage"
-DEPENDS_azboxhd = "genromfs-native azbox-minime-packer"
+DEPENDS_azboxminime = "genromfs-native azbox-minime-packer"
 
 
 KV = "3.3.1"

@@ -1,6 +1,6 @@
 DESCRIPTION = "Create Azbox MiniME webinterface update image"
 SECTION = "console/utils"
-LICENSE = "GPL"
+LICENSE = "CLOSED"
 
 PROVIDES = "azbox-minime-packer"
 
