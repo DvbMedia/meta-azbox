@@ -2,6 +2,8 @@ DESCRIPTION = "Create Azbox MiniME webinterface update image"
 SECTION = "console/utils"
 LICENSE = "GPL"
 
+PROVIDES = "azbox-minime-packer"
+
 PV="1.3"
 SRC_URI = "file://pack_minime_image.c \
 	   file://Makefile.am \

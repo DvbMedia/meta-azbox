@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 DESCRIPTION = "OpenOAM Image"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "proprietary"
 MAINTAINER = "OAM team"
-=======
-DESCRIPTION = "SIFTeam Image"
-SECTION = "base"
-PRIORITY = "required"
-LICENSE = "proprietary"
-MAINTAINER = "OpenOAM"
->>>>>>> madokatest
 
 require conf/license/license-gplv2.inc
 
@@ -18,9 +10,6 @@ PV = "${IMAGE_VERSION}"
 PR = "r${DATETIME}"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-<<<<<<< HEAD
-IMAGE_INSTALL = "openoam-base"
-=======
 IMAGE_INSTALL = " \
 	oe-alliance-enigma2 \
 	openoam-version-info \
@@ -46,7 +35,6 @@ IMAGE_INSTALL = " \
 	vsftpd \
 	nano \
 	"
->>>>>>> madokatest
 
 export IMAGE_BASENAME = "openoam-image"
 IMAGE_LINGUAS = ""
@@ -54,8 +42,6 @@ IMAGE_LINGUAS = ""
 IMAGE_FEATURES += "package-management"
 
 inherit image
-<<<<<<< HEAD
-=======
 
 rootfs_postprocess() {
 			curdir=$PWD
@@ -91,4 +77,3 @@ generate_nfo() {
 do_rootfs_append() {
 			generate_nfo
 }
->>>>>>> madokatest
